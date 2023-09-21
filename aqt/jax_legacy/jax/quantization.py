@@ -151,6 +151,8 @@ class QuantOps:
     half_shift: bool
     # Axis along which to quantize weights (the non-feature axis).
     axis: Optional[Iterable[int]]
+    use_ste: bool
+    k: float
 
 
     # expected scale shape for weights quantization. Defaults to None.
